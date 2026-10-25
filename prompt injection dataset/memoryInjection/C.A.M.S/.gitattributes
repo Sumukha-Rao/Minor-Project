@@ -1,0 +1,3 @@
+
+# Store this vendored dataset as ordinary Git blobs, preserving its bytes.
+* -filter !diff !merge -text
