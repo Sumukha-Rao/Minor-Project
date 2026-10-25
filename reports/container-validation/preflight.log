@@ -1,0 +1,15 @@
+time="2026-10-25T18:56:15Z" level=warning msg="Found orphan containers ([minor-project-promptguard-run-8470d38b3cc1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+{
+  "distilbert": {
+    "available": false,
+    "error": "We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like distilbert-base-uncased is not the path to a directory containing a file named config.json.\nCheckout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+  },
+  "bert": {
+    "available": false,
+    "error": "We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like bert-base-uncased is not the path to a directory containing a file named config.json.\nCheckout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+  },
+  "roberta": {
+    "available": false,
+    "error": "We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like FacebookAI/roberta-base is not the path to a directory containing a file named config.json.\nCheckout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."
+  }
+}

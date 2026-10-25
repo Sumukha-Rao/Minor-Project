@@ -6,3 +6,4 @@ data/processed/
 artifacts/
 runs/
 .cache/
+docker-output/

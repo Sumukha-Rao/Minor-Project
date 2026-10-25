@@ -1,0 +1,131 @@
+time="2026-10-25T18:56:15Z" level=warning msg="Found orphan containers ([minor-project-promptguard-run-8470d38b3cc1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+{
+  "model": "tfidf",
+  "validation": {
+    "n": 72,
+    "threshold": 0.5591827533404559,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "macro_f1": 1.0,
+    "confusion_matrix": [
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        64
+      ]
+    ],
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.0,
+    "roc_auc": 1.0,
+    "pr_auc_trapezoid": 1.0,
+    "average_precision": 1.0,
+    "brier_score": 0.11712594049579837,
+    "log_loss": 0.41683423430300315,
+    "ece_10_equal_width": 0.33954782614089885,
+    "per_class": {
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "PROMPT_INJECTION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 64.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      }
+    }
+  },
+  "test": {
+    "n": 128,
+    "threshold": 0.5591827533404559,
+    "accuracy": 0.5703125,
+    "precision": 0.5384615384615384,
+    "recall": 0.984375,
+    "f1": 0.6961325966850829,
+    "macro_f1": 0.48139963167587474,
+    "confusion_matrix": [
+      [
+        10,
+        54
+      ],
+      [
+        1,
+        63
+      ]
+    ],
+    "false_positive_rate": 0.84375,
+    "false_negative_rate": 0.015625,
+    "roc_auc": 0.6082763671875,
+    "pr_auc_trapezoid": 0.6233858782386097,
+    "average_precision": 0.627636325644159,
+    "brier_score": 0.2542238903403377,
+    "log_loss": 0.7018515798666312,
+    "ece_10_equal_width": 0.1092677874048724,
+    "per_class": {
+      "BENIGN": {
+        "precision": 0.9090909090909091,
+        "recall": 0.15625,
+        "f1-score": 0.26666666666666666,
+        "support": 64.0
+      },
+      "PROMPT_INJECTION": {
+        "precision": 0.5384615384615384,
+        "recall": 0.984375,
+        "f1-score": 0.6961325966850829,
+        "support": 64.0
+      },
+      "accuracy": 0.5703125,
+      "macro avg": {
+        "precision": 0.7237762237762237,
+        "recall": 0.5703125,
+        "f1-score": 0.48139963167587474,
+        "support": 128.0
+      },
+      "weighted avg": {
+        "precision": 0.7237762237762237,
+        "recall": 0.5703125,
+        "f1-score": 0.48139963167587474,
+        "support": 128.0
+      }
+    }
+  },
+  "costs": {
+    "wall_seconds": 0.0168086530011351,
+    "process_peak_rss_mib": 359.62109375,
+    "memory_note": "Cumulative process high-water RSS on Linux; includes prior work, not isolated model memory.",
+    "single_ms_p50": 0.26040849934361177,
+    "single_ms_p95": 0.48603114928482677,
+    "batch_ms_per_sample_mean": 0.032501865740010134,
+    "batch_size": 16,
+    "n": 72,
+    "includes": "tokenization/vectorization + prediction; warm model; no disk loading",
+    "model_bytes": 67725
+  }
+}
+{
+  "prediction": "PROMPT_INJECTION",
+  "probability": 0.632705826589432,
+  "individual_models": {
+    "tfidf_logistic_regression": 0.632705826589432
+  }
+}

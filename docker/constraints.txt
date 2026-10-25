@@ -1,0 +1,14 @@
+# Tested CPU/Python 3.12 direct dependency versions; not a transitive lockfile.
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.5.2
+torch==2.6.0+cpu
+transformers==4.49.0
+safetensors==0.5.3
+pyarrow==19.0.1
+openpyxl==3.1.5
+plotly==6.0.1
+PyYAML==6.0.2
+joblib==1.4.2
+pytest==8.3.5

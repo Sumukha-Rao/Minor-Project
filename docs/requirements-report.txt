@@ -1,0 +1,2 @@
+# Only needed to regenerate PROJECT_REPORT.docx, not for the research container.
+python-docx>=1.1,<2

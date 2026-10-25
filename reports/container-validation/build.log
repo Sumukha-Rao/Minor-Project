@@ -1,0 +1,59 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.30kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm
+#2 DONE 0.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 239B done
+#3 DONE 0.0s
+
+#4 [stage-0  1/12] FROM docker.io/library/python:3.12-slim-bookworm@sha256:6a0e06f5ba0b373d051aabd3fffb9b873f27f9a2a3a14bcbe37dee6f0e3bbc70
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 1.64kB done
+#5 DONE 0.0s
+
+#6 [stage-0  7/12] RUN --mount=type=secret,id=build_ca     if [ -s /run/secrets/build_ca ]; then export PIP_CERT=/run/secrets/build_ca; fi;     pip install --no-cache-dir --no-deps . && pip check
+#6 CACHED
+
+#7 [stage-0  5/12] RUN --mount=type=secret,id=build_ca     if [ -s /run/secrets/build_ca ]; then export PIP_CERT=/run/secrets/build_ca; fi;     pip install --no-cache-dir torch==2.6.0+cpu --index-url https://download.pytorch.org/whl/cpu     && pip install --no-cache-dir -r requirements.txt -c /tmp/constraints.txt
+#7 CACHED
+
+#8 [stage-0  6/12] COPY src/ src/
+#8 CACHED
+
+#9 [stage-0  4/12] COPY docker/constraints.txt /tmp/constraints.txt
+#9 CACHED
+
+#10 [stage-0 10/12] COPY data/smoke/ data/smoke/
+#10 CACHED
+
+#11 [stage-0  9/12] COPY tests/ tests/
+#11 CACHED
+
+#12 [stage-0  3/12] COPY requirements.txt pyproject.toml ./
+#12 CACHED
+
+#13 [stage-0  8/12] COPY configs/ configs/
+#13 CACHED
+
+#14 [stage-0  2/12] WORKDIR /app
+#14 CACHED
+
+#15 [stage-0 11/12] COPY docker/entrypoint.py docker/entrypoint.py
+#15 CACHED
+
+#16 [stage-0 12/12] RUN mkdir -p runs reports data/processed .cache/huggingface     && chmod -R a+rX /app     && chown -R 1000:1000 runs reports data/processed .cache
+#16 DONE 12.5s
+
+#17 exporting to image
+#17 exporting layers
+#17 exporting layers 1.3s done
+#17 writing image sha256:01fc4794498d96750a0d987c2e5de81c42bd447f22290cddb505bc872a805d63 done
+#17 naming to docker.io/library/promptguard-research:local done
+#17 DONE 1.3s

@@ -1,0 +1,18 @@
+services:
+  promptguard:
+    build: .
+    image: promptguard-research:local
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs:
+      - /tmp:size=1g,mode=1777
+    volumes:
+      - ./prompt injection dataset:/app/prompt injection dataset:ro
+      - ./configs:/app/configs:ro
+      - ./docker-output/runs:/app/runs
+      - ./docker-output/reports:/app/reports
+      - ./docker-output/processed:/app/data/processed
+      - ./docker-output/cache:/app/.cache/huggingface

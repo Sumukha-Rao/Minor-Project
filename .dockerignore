@@ -1,0 +1,16 @@
+**
+!requirements.txt
+!pyproject.toml
+!src/
+!src/**
+!configs/
+!configs/**
+!tests/
+!tests/**
+!data/
+!data/smoke/
+!data/smoke/**
+!docker/
+!docker/entrypoint.py
+!docker/constraints.txt
+**/__pycache__/

@@ -10,6 +10,16 @@ A Python research pipeline combining BERT, RoBERTa, DistilBERT, and TF-IDF logis
 
 Read [dataset analysis](reports/dataset_analysis.md), [actual results](reports/research_results.md), [inventory](reports/inventory.json), and [hardware](reports/hardware.json). The evaluation plots are standalone HTML files under `runs/baseline/evaluation/`.
 
+## Docker quick start
+
+```bash
+./docker/run.sh smoke     # train a small real-data baseline and predict
+./docker/run.sh test      # automated suite, including tiny Transformer fixtures
+./docker/run.sh baseline  # prepare, train and generate TF-IDF OOF predictions
+```
+
+See [Docker instructions](docs/DOCKER.md) for prerequisites, persistent outputs, full training, and troubleshooting. The CPU container needs no web ports. Trained models are generated locally; they are not included in a fresh clone. A consolidated [project report](docs/PROJECT_REPORT.docx) covers architecture, data, algorithms, review findings and validation.
+
 ## Dataset admission
 
 | Collection | Policy |

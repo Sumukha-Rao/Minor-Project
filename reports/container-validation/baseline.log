@@ -1,0 +1,198 @@
+{
+  "admitted_rows_before_dedup": 26034,
+  "unverified_rows_in_selected_sources": 60000,
+  "cross_split_rows_quarantined": 0,
+  "exact_duplicates_removed": 9694,
+  "conflict_texts": 8,
+  "exact_cross_split_texts": 0,
+  "near_duplicate_edges": 489,
+  "groups": 5954,
+  "audit_only_nonconflicting_rows": 4992,
+  "mixed_label_groups": 0,
+  "largest_groups": {
+    "0008ddc6314b613d21e8cb4cc4e53b214465e90e327b799812d7d886132d5de8": 854,
+    "00cd9702a20b0376eab32a36f888f37ca22ff0e607a5a69bccf3a398c503c1d5": 839,
+    "004699eb7f288d6bfee5117bcfdc50e7faac6e826cbb9c8c98fde02daf9680a7": 829,
+    "0091977b4cc3228a0d28011124b4ce46096c75b407f55898552aeb6824be7367": 810,
+    "00047491f83dd93fbbad859992ce76c3c2dfbe4eec1b6816772354bd2c43f184": 782,
+    "003d997f1db1265845506d7f3e26b43ad56f6c5fc0dec62aa0434fba0634a8b2": 779,
+    "000880b27348529a840ab64d63dfd029d03225f4fffaf6739e22b824b5ceee75": 769,
+    "00136917bd062d006478fcf75f5667ea0aeb2d495ae798b516597abc06da1a9f": 769,
+    "00714557c44c2eb03be6fcc6908a566413252807ef672a5ea40efd6ad0fe3071": 199,
+    "02b8188cdaa5b03bb6a4b275ffc0a0974b57e10a1cd6d1a898f1aa082c20e0fb": 198
+  },
+  "fingerprint": "209a972718f4a3b0dea5c0716522a72949ac15a75544d30bd5c09965c9515d6e",
+  "partitions": {
+    "test": {
+      "rows": 4992,
+      "labels": {
+        "0": 2995,
+        "1": 1997
+      },
+      "groups": 4951,
+      "source_by_label": {
+        "('prompt injection dataset/prompt-injections-benchmark/data/test-00000-of-00001.parquet', 0)": 2995,
+        "('prompt injection dataset/prompt-injections-benchmark/data/test-00000-of-00001.parquet', 1)": 1997
+      }
+    },
+    "train": {
+      "rows": 9249,
+      "labels": {
+        "0": 8468,
+        "1": 781
+      },
+      "groups": 804,
+      "source_by_label": {
+        "('prompt injection dataset/memoryInjection/C.A.M.S/dataset-cams.csv', 0)": 8468,
+        "('prompt injection dataset/prompt_injections/prompt_injections.csv', 1)": 781
+      }
+    },
+    "validation": {
+      "rows": 2091,
+      "labels": {
+        "0": 1898,
+        "1": 193
+      },
+      "groups": 199,
+      "source_by_label": {
+        "('prompt injection dataset/memoryInjection/C.A.M.S/dataset-cams.csv', 0)": 1898,
+        "('prompt injection dataset/prompt_injections/prompt_injections.csv', 1)": 193
+      }
+    }
+  }
+}
+{
+  "model": "tfidf",
+  "validation": {
+    "n": 2091,
+    "threshold": 0.4328460068581203,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "macro_f1": 1.0,
+    "confusion_matrix": [
+      [
+        1898,
+        0
+      ],
+      [
+        0,
+        193
+      ]
+    ],
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.0,
+    "roc_auc": 1.0,
+    "pr_auc_trapezoid": 1.0,
+    "average_precision": 1.0,
+    "brier_score": 0.004387609996638936,
+    "log_loss": 0.04500198839994071,
+    "ece_10_equal_width": 0.04242598846337944,
+    "per_class": {
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 1898.0
+      },
+      "PROMPT_INJECTION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 193.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2091.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2091.0
+      }
+    }
+  },
+  "test": {
+    "n": 4992,
+    "threshold": 0.4328460068581203,
+    "accuracy": 0.4364983974358974,
+    "precision": 0.4150354019158684,
+    "recall": 0.9979969954932398,
+    "f1": 0.5862626856890719,
+    "macro_f1": 0.35153008695756577,
+    "confusion_matrix": [
+      [
+        186,
+        2809
+      ],
+      [
+        4,
+        1993
+      ]
+    ],
+    "false_positive_rate": 0.9378964941569282,
+    "false_negative_rate": 0.00200300450676014,
+    "roc_auc": 0.6623114972960276,
+    "pr_auc_trapezoid": 0.5003470369476258,
+    "average_precision": 0.5008888222590124,
+    "brier_score": 0.3388721056738079,
+    "log_loss": 0.91912310571751,
+    "ece_10_equal_width": 0.3432505813745285,
+    "per_class": {
+      "BENIGN": {
+        "precision": 0.9789473684210527,
+        "recall": 0.06210350584307179,
+        "f1-score": 0.11679748822605965,
+        "support": 2995.0
+      },
+      "PROMPT_INJECTION": {
+        "precision": 0.4150354019158684,
+        "recall": 0.9979969954932398,
+        "f1-score": 0.5862626856890719,
+        "support": 1997.0
+      },
+      "accuracy": 0.4364983974358974,
+      "macro avg": {
+        "precision": 0.6969913851684606,
+        "recall": 0.5300502506681558,
+        "f1-score": 0.35153008695756577,
+        "support": 4992.0
+      },
+      "weighted avg": {
+        "precision": 0.7533599891921158,
+        "recall": 0.4364983974358974,
+        "f1-score": 0.30460237591308603,
+        "support": 4992.0
+      }
+    }
+  },
+  "costs": {
+    "wall_seconds": 7.9515547289993265,
+    "process_peak_rss_mib": 637.96484375,
+    "memory_note": "Cumulative process high-water RSS on Linux; includes prior work, not isolated model memory.",
+    "single_ms_p50": 0.24752850004006177,
+    "single_ms_p95": 0.3472154993687582,
+    "batch_ms_per_sample_mean": 0.03233618749713211,
+    "batch_size": 16,
+    "n": 128,
+    "includes": "tokenization/vectorization + prediction; warm model; no disk loading",
+    "model_bytes": 518045
+  }
+}
+{
+  "tfidf": {
+    "count": 9249.0,
+    "mean": 0.17708295205986557,
+    "std": 0.2295231154122544,
+    "min": 0.006875610996557483,
+    "25%": 0.03531628885859922,
+    "50%": 0.0846101010094828,
+    "75%": 0.2051536846254921,
+    "max": 0.9476822992399709
+  }
+}

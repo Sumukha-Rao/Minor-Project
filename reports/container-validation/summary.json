@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-26T00:27:49.469544+05:30",
+  "source_commit": "cbf6720783ca02240ed14c3c7c9ae54aeddc5d86",
+  "image_id": "sha256:01fc4794498d96750a0d987c2e5de81c42bd447f22290cddb505bc872a805d63",
+  "tests_passed": 19,
+  "tests_seconds": 23.32,
+  "inventory_files_read": 11,
+  "original_hashes_match": true,
+  "oof_rows": 9249,
+  "oof_folds": 5,
+  "baseline_metrics": {
+    "model": "tfidf",
+    "validation": {
+      "n": 2091,
+      "threshold": 0.4328460068581203,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "confusion_matrix": [
+        [
+          1898,
+          0
+        ],
+        [
+          0,
+          193
+        ]
+      ],
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "roc_auc": 1.0,
+      "pr_auc_trapezoid": 1.0,
+      "average_precision": 1.0,
+      "brier_score": 0.004387609996638936,
+      "log_loss": 0.04500198839994071,
+      "ece_10_equal_width": 0.04242598846337944,
+      "per_class": {
+        "BENIGN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1898.0
+        },
+        "PROMPT_INJECTION": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 193.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2091.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2091.0
+        }
+      }
+    },
+    "test": {
+      "n": 4992,
+      "threshold": 0.4328460068581203,
+      "accuracy": 0.4364983974358974,
+      "precision": 0.4150354019158684,
+      "recall": 0.9979969954932398,
+      "f1": 0.5862626856890719,
+      "macro_f1": 0.35153008695756577,
+      "confusion_matrix": [
+        [
+          186,
+          2809
+        ],
+        [
+          4,
+          1993
+        ]
+      ],
+      "false_positive_rate": 0.9378964941569282,
+      "false_negative_rate": 0.00200300450676014,
+      "roc_auc": 0.6623114972960276,
+      "pr_auc_trapezoid": 0.5003470369476258,
+      "average_precision": 0.5008888222590124,
+      "brier_score": 0.3388721056738079,
+      "log_loss": 0.91912310571751,
+      "ece_10_equal_width": 0.3432505813745285,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.9789473684210527,
+          "recall": 0.06210350584307179,
+          "f1-score": 0.11679748822605965,
+          "support": 2995.0
+        },
+        "PROMPT_INJECTION": {
+          "precision": 0.4150354019158684,
+          "recall": 0.9979969954932398,
+          "f1-score": 0.5862626856890719,
+          "support": 1997.0
+        },
+        "accuracy": 0.4364983974358974,
+        "macro avg": {
+          "precision": 0.6969913851684606,
+          "recall": 0.5300502506681558,
+          "f1-score": 0.35153008695756577,
+          "support": 4992.0
+        },
+        "weighted avg": {
+          "precision": 0.7533599891921158,
+          "recall": 0.4364983974358974,
+          "f1-score": 0.30460237591308603,
+          "support": 4992.0
+        }
+      }
+    },
+    "costs": {
+      "wall_seconds": 7.9515547289993265,
+      "process_peak_rss_mib": 637.96484375,
+      "memory_note": "Cumulative process high-water RSS on Linux; includes prior work, not isolated model memory.",
+      "single_ms_p50": 0.24752850004006177,
+      "single_ms_p95": 0.3472154993687582,
+      "batch_ms_per_sample_mean": 0.03233618749713211,
+      "batch_size": 16,
+      "n": 128,
+      "includes": "tokenization/vectorization + prediction; warm model; no disk loading",
+      "model_bytes": 518045
+    }
+  }
+}
