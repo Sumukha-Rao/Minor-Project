@@ -1,0 +1,10 @@
+{
+  "dataset_audit": "completed",
+  "tfidf": "trained and evaluated on real local data",
+  "tfidf_oof": "completed; 5 nested group-aware folds",
+  "transformers": "not trained: requested pretrained weights unavailable locally; package-network DNS unavailable",
+  "ensembles_and_full_ablations": "implementation integration-tested; no real training or performance results",
+  "family_held_out": "not supported by currently admitted positive labels",
+  "tests": "19 passed; 3 upstream SciPy deprecation warnings",
+  "original_datasets_unchanged": true
+}

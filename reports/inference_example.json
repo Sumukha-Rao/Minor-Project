@@ -1,0 +1,7 @@
+{
+  "prediction": "PROMPT_INJECTION",
+  "probability": 0.7870420328678444,
+  "individual_models": {
+    "tfidf_logistic_regression": 0.7870420328678444
+  }
+}

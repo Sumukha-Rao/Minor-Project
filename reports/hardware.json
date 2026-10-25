@@ -1,0 +1,12 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "logical_cpus": 12,
+  "cuda": false,
+  "memory": [
+    "MemTotal:       19836384 kB",
+    "MemFree:         1258332 kB",
+    "MemAvailable:   11946340 kB"
+  ],
+  "torch": "2.14.0+cu130"
+}

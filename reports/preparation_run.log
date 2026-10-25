@@ -1,0 +1,63 @@
+{
+  "admitted_rows_before_dedup": 26034,
+  "unverified_rows_in_selected_sources": 60000,
+  "cross_split_rows_quarantined": 0,
+  "exact_duplicates_removed": 9694,
+  "conflict_texts": 8,
+  "exact_cross_split_texts": 0,
+  "near_duplicate_edges": 489,
+  "groups": 5954,
+  "audit_only_nonconflicting_rows": 4992,
+  "mixed_label_groups": 0,
+  "largest_groups": {
+    "0008ddc6314b613d21e8cb4cc4e53b214465e90e327b799812d7d886132d5de8": 854,
+    "00cd9702a20b0376eab32a36f888f37ca22ff0e607a5a69bccf3a398c503c1d5": 839,
+    "004699eb7f288d6bfee5117bcfdc50e7faac6e826cbb9c8c98fde02daf9680a7": 829,
+    "0091977b4cc3228a0d28011124b4ce46096c75b407f55898552aeb6824be7367": 810,
+    "00047491f83dd93fbbad859992ce76c3c2dfbe4eec1b6816772354bd2c43f184": 782,
+    "003d997f1db1265845506d7f3e26b43ad56f6c5fc0dec62aa0434fba0634a8b2": 779,
+    "000880b27348529a840ab64d63dfd029d03225f4fffaf6739e22b824b5ceee75": 769,
+    "00136917bd062d006478fcf75f5667ea0aeb2d495ae798b516597abc06da1a9f": 769,
+    "00714557c44c2eb03be6fcc6908a566413252807ef672a5ea40efd6ad0fe3071": 199,
+    "02b8188cdaa5b03bb6a4b275ffc0a0974b57e10a1cd6d1a898f1aa082c20e0fb": 198
+  },
+  "fingerprint": "dc8c56e4ad4bdebd4c80f3801858a614d43a1130f2b076d08fe8eb58f3dcbabd",
+  "partitions": {
+    "test": {
+      "rows": 4992,
+      "labels": {
+        "0": 2995,
+        "1": 1997
+      },
+      "groups": 4951,
+      "source_by_label": {
+        "('prompt injection dataset/prompt-injections-benchmark/data/test-00000-of-00001.parquet', 0)": 2995,
+        "('prompt injection dataset/prompt-injections-benchmark/data/test-00000-of-00001.parquet', 1)": 1997
+      }
+    },
+    "train": {
+      "rows": 9249,
+      "labels": {
+        "0": 8468,
+        "1": 781
+      },
+      "groups": 804,
+      "source_by_label": {
+        "('prompt injection dataset/memoryInjection/C.A.M.S/dataset-cams.csv', 0)": 8468,
+        "('prompt injection dataset/prompt_injections/prompt_injections.csv', 1)": 781
+      }
+    },
+    "validation": {
+      "rows": 2091,
+      "labels": {
+        "0": 1898,
+        "1": 193
+      },
+      "groups": 199,
+      "source_by_label": {
+        "('prompt injection dataset/memoryInjection/C.A.M.S/dataset-cams.csv', 0)": 1898,
+        "('prompt injection dataset/prompt_injections/prompt_injections.csv', 1)": 193
+      }
+    }
+  }
+}
